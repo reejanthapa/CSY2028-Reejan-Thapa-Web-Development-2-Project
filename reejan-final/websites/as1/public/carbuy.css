@@ -1,0 +1,309 @@
+/* Import website font */
+@import url('https://stockfont.org/?3e1218d9a01517d5734a1be9e67be4af797abff1230ab272235ec8ed759251d6');
+
+
+* {
+	margin: 0;
+
+	padding: 0;
+}
+
+body { font-family: 'Oxygen-Regular', sans-serif; background-color: #f6f5f4; max-width: 100vw; overflow-x: hidden;}
+h1, h2, h3, h4 { font-weight: normal; }
+
+a, a:visited {color: #444;}
+a:hover {text-decoration: underline; color: #222;}
+
+header {
+    margin-top: 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 2vw;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: #fefefe;
+}
+
+header h1 {
+    font-size: 2.5em;
+    white-space: nowrap;
+    margin-right: 2vw;
+    font-family: 'Univers-Light-Normal';
+}
+
+header form {
+    display: flex;
+    flex: 2;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1vw;
+}
+
+header form input[type="text"] {
+    border: 3px solid black;
+    font-size: 1.5em;
+    padding: 0.5em;
+    width: 40%;
+    border-radius: 1em;
+}
+
+header form input[type="submit"] {
+    background-color: #3665f3;
+    color: white;
+    font-size: 1.5em;
+    padding: 0.5em 1.5em;
+    cursor: pointer;
+    border: 0;
+    border-radius: 1em;
+}
+
+body > img { width: 100vw; }
+
+
+
+header .i {
+	color: #e43137;
+}
+header .b {
+	color: #0063d1;
+}
+header .u {
+	color: #f4ae01;
+}
+header .y {
+	color: #85b716;
+}
+
+body > nav {
+	border-bottom: 1px solid #ddd;
+}
+body > nav ul li:last-child a:after {content: 'ˬ'; position: absolute;}
+
+body > nav ul {
+	display: flex;
+	width: 100vw;
+	list-style-type: none;
+}
+
+body > nav ul li {
+	flex: 1;
+}
+
+body > nav ul li a {
+	display: block; text-align: center;
+	padding-top: 0.5vw;
+	padding-bottom: 0.5vw;
+	font-size: 1.5em;
+}
+
+.rt-add-container {
+	width: 70%;
+	margin: 5vw auto;
+	background-color: white;
+	padding: 2em;
+	border-radius: 1em;
+	box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+	text-align: center;
+	color: #3665f3;
+	margin-bottom: 2em;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5em;
+}
+
+label {
+	font-weight: bold;
+}
+
+input, textarea, select {
+	padding: 0.8em;
+	font-size: 1em;
+	border: 1px solid #ccc;
+	border-radius: 0.5em;
+}
+
+input[type="submit"] {
+	background-color: #3665f3;
+	color: white;
+	width: 50%;
+	align-self: center;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #274dc1;
+}
+
+.rt-message {
+	text-align: center;
+	font-weight: bold;
+}
+
+.rt-success {
+	color: green;
+}
+
+.rt-error {
+	color: red;
+}
+
+.rt-cancel-btn {
+	display: inline-block;
+	text-align: center;
+	padding: 0.8em 2em;
+	font-size: 1em;
+	border: none;
+	border-radius: 0.5em;
+	background-color: #aaa;
+	color: white;
+	text-decoration: none;
+	line-height: 2.2em;
+}
+
+.rt-cancel-btn:hover {
+	background-color: #888;
+}
+
+.authLink {
+	background-color: #3665f3;
+	color: white !important;
+	padding: 0.1vw 1vw;
+	margin: 0 0.5vw;
+	border-radius: 0.5em;
+	font-weight: bold;
+	display: inline-block;
+	text-align: center;
+}
+
+.authLink:hover {
+	background-color: #274dc1;
+	text-decoration: none;
+}
+
+nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
+	align-items: center;
+}
+
+nav ul li {
+	margin: 0 0.7em;
+	position: relative;
+}
+
+
+.carList {
+	list-style-type: none;
+}
+
+.carList li {
+	padding: 2vw;
+	border-bottom: 1px solid #ddd;
+	display: grid;
+	grid-template-columns: 18% 80%;
+}
+
+.carList img {width: auto; display: block; max-width: 10vw;}
+
+p.price {display: block; text-align: right; font-weight: bold; font-size: 2em;}
+a.more {display: block; text-align: right; font-weight: bold; float: right; background-color: #3665f3;
+	color: white;
+
+	font-size: 2em;
+	padding: 0.5em;
+	cursor: pointer; }
+
+main {padding: 3vw; display: block; overflow: hidden; width: 80vw; margin: auto; border-left: 2px solid #ddd; border-right: 2px solid #ddd;}
+
+article.car {
+	display: grid;
+	griid-template-columns: 60% 40%;
+	grid-template-areas: "img details"
+	"description description"
+	"reviews reviews"
+}
+
+article.car img {
+	grid-area: img;
+}
+
+main h1 {margin-top: 5vw; margin-bottom: 5vw;}
+article .details {
+	grid-area: details;
+}
+
+article .reviews {
+	grid-area: reviews;
+
+}
+
+textarea {width: 100%; height: 20em;}
+.reviews form {margin-top: 5em;}
+.reviews ul {
+	list-style-type: none;
+}
+.reviews li{
+	padding-top: 1em;
+	padding-bottom: 1em;
+	border-bottom: 1px solid #ddd;
+}
+
+article .description {
+	grid-area: description;
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
+.price {color: red;}
+article.car .price {text-align: left;}
+
+footer {margin-top: 5vw; border-top: 1px solid #ddd;}
+
+time {display: block; margin: 1em 0;}
+main form {
+	display: flex;
+	flex-wrap: wrap;
+	width: 50vw;
+}
+
+.details p {
+	margin-top: 0.5em;
+}
+main form label, main form input {
+	flex-grow: 1;
+	width: 20vw;
+	margin-bottom: 1em;
+	margin-right: 2vw;
+	margin-left: 2vw;
+}
+
+.bid {
+	margin-top: 2em;
+	padding: 0;
+}
+
+.bid input {
+	margin-left: 0;
+}
+
+main form input[type=submit] {
+	background-color: #3665f3;
+	color: white;
+	flex-grow: 0;
+	margin-left: auto;
+	font-size: 1.2em;
+	padding: 0.2em;
+	cursor: pointer;
+	border: 0;
+
+}
+
+
